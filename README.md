@@ -1,3 +1,3 @@
 # website
 
-http://thebuttskie.github.io/repository
+http://thebuttskie.github.io
