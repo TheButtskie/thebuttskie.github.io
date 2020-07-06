@@ -3,4 +3,4 @@
 http://thebuttskie.github.io
 
 Accessible:
-http://thebuttskie/CSGO-Memories
+http://thebuttskie.github.io/CSGO-Memories
