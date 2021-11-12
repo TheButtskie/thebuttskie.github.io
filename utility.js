@@ -23,4 +23,5 @@ form.addEventListener('search', (event) => {
       console.log('Your query count: ' + data.data);
     }
   });
+  return false;
 });
