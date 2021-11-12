@@ -12,7 +12,6 @@ var getJSON = function(url, callback) {
     };
     xhr.send();
 };
-And use it like this:
 
 getJSON('https://fastapi-btest.herokuapp.com/',
 function(err, data) {
