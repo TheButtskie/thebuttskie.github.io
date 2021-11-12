@@ -19,6 +19,7 @@ window.onload = function() {
     if (form.value == null) {
       return false;
     }
+    console.log(form.value)
     getJSON('https://fastapi-btest.herokuapp.com/' + form.value,
       function(err, data) {
       if (err !== null) {
