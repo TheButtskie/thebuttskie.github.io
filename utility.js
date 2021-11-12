@@ -16,8 +16,8 @@ var getJSON = function(url, callback) {
 getJSON('https://fastapi-btest.herokuapp.com/',
 function(err, data) {
   if (err !== null) {
-    alert('Something went wrong: ' + err);
+    console.log('Something went wrong: ' + err);
   } else {
-    alert('Your query count: ' + data);
+    console.log('Your query count: ' + data.data);
   }
 });
