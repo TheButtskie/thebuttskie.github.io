@@ -16,6 +16,9 @@ var getJSON = function(url, callback) {
 window.onload = function() {
   const form  = document.getElementById('SearchFormInput');
   form.addEventListener('search', (event) => {
+    if (form.value == null) {
+      return false;
+    }
     getJSON('https://fastapi-btest.herokuapp.com/' + form.value,
       function(err, data) {
       if (err !== null) {
