@@ -13,15 +13,17 @@ var getJSON = function(url, callback) {
     xhr.send();
 };
 
-const form  = document.getElementById('SearchFormInput');
-form.addEventListener('search', (event) => {
-  getJSON('https://fastapi-btest.herokuapp.com/' + form.value,
-    function(err, data) {
-    if (err !== null) {
-      console.log('Something went wrong: ' + err);
-    } else {
-      console.log('Your query count: ' + data.data);
-    }
+window.onload = function() {
+  const form  = document.getElementById('SearchFormInput');
+  form.addEventListener('search', (event) => {
+    getJSON('https://fastapi-btest.herokuapp.com/' + form.value,
+      function(err, data) {
+      if (err !== null) {
+        console.log('Something went wrong: ' + err);
+      } else {
+        console.log('Your query count: ' + data.data);
+      }
+    });
+    return false;
   });
-  return false;
-});
+}
